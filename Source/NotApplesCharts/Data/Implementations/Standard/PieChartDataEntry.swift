@@ -20,14 +20,14 @@ open class PieChartDataEntry: ChartDataEntry
     }
     
 
-    /// - Parameters:
+    ///
     ///   - value: The value on the y-axis
     @objc public init(value: Double)
     {
         super.init(x: .nan, y: value)
     }
 
-    /// - Parameters:
+    ///
     ///   - value: The value on the y-axis
     ///   - label: The label for the x-axis
     @objc public convenience init(value: Double, label: String?)
@@ -36,7 +36,7 @@ open class PieChartDataEntry: ChartDataEntry
         self.label = label
     }
     
-    /// - Parameters:
+    ///
     ///   - value: The value on the y-axis
     ///   - label: The label for the x-axis
     ///   - data: Spot for additional data this Entry represents
@@ -45,7 +45,7 @@ open class PieChartDataEntry: ChartDataEntry
         self.init(value: value, label: label, icon: nil, data: data)
     }
     
-    /// - Parameters:
+    ///
     ///   - value: The value on the y-axis
     ///   - label: The label for the x-axis
     ///   - icon: icon image
@@ -56,7 +56,7 @@ open class PieChartDataEntry: ChartDataEntry
         self.icon = icon
     }
     
-    /// - Parameters:
+    ///
     ///   - value: The value on the y-axis
     ///   - label: The label for the x-axis
     ///   - icon: icon image
@@ -69,7 +69,7 @@ open class PieChartDataEntry: ChartDataEntry
         self.data = data
     }
 
-    /// - Parameters:
+    ///
     ///   - value: The value on the y-axis
     ///   - data: Spot for additional data this Entry represents
     @objc public convenience init(value: Double, data: Any?)
@@ -78,7 +78,7 @@ open class PieChartDataEntry: ChartDataEntry
         self.data = data
     }
     
-    /// - Parameters:
+    ///
     ///   - value: The value on the y-axis
     ///   - icon: icon image
     @objc public convenience init(value: Double, icon: NSUIImage?)
@@ -87,7 +87,7 @@ open class PieChartDataEntry: ChartDataEntry
         self.icon = icon
     }
     
-    /// - Parameters:
+    ///
     ///   - value: The value on the y-axis
     ///   - icon: icon image
     ///   - data: Spot for additional data this Entry represents

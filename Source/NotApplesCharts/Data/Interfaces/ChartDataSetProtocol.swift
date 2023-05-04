@@ -47,7 +47,7 @@ public protocol ChartDataSetProtocol
     /// - Returns: The entry object found at the given index (not x-value!)
     func entryForIndex(_ i: Int) -> ChartDataEntry?
     
-    /// - Parameters:
+    ///
     ///   - xValue: the x-value
     ///   - closestToY: If there are multiple y-values for the specified x-value,
     ///   - rounding: determine whether to round up/down/closest if there is no Entry matching the provided x-value
@@ -59,7 +59,7 @@ public protocol ChartDataSetProtocol
         closestToY yValue: Double,
         rounding: ChartDataSetRounding) -> ChartDataEntry?
     
-    /// - Parameters:
+    ///
     ///   - xValue: the x-value
     ///   - closestToY: If there are multiple y-values for the specified x-value,
     /// - Returns: The first Entry object found at the given x-value with binary search.
@@ -73,7 +73,7 @@ public protocol ChartDataSetProtocol
     /// An empty array if no Entry object at that x-value.
     func entriesForXValue(_ xValue: Double) -> [ChartDataEntry]
     
-    /// - Parameters:
+    ///
     ///   - xValue: x-value of the entry to search for
     ///   - closestToY: If there are multiple y-values for the specified x-value,
     ///   - rounding: Rounding method if exact value was not found
@@ -84,7 +84,7 @@ public protocol ChartDataSetProtocol
         closestToY yValue: Double,
         rounding: ChartDataSetRounding) -> Int
     
-    /// - Parameters:
+    ///
     ///   - e: the entry to search for
     /// - Returns: The array-index of the specified entry
     func entryIndex(entry e: ChartDataEntry) -> Int
@@ -95,7 +95,7 @@ public protocol ChartDataSetProtocol
     ///
     /// Entries are added to the end of the list.
     ///
-    /// - Parameters:
+    ///
     ///   - e: the entry to add
     /// - Returns: `true` if the entry was added successfully, `false` ifthis feature is not supported
     func addEntry(_ e: ChartDataEntry) -> Bool
@@ -108,7 +108,7 @@ public protocol ChartDataSetProtocol
     ///
     /// Entries are added to the end of the list.
     ///
-    /// - Parameters:
+    ///
     ///   - e: the entry to add
     /// - Returns: `true` if the entry was added successfully, `false` ifthis feature is not supported
     func addEntryOrdered(_ e: ChartDataEntry) -> Bool
@@ -117,7 +117,7 @@ public protocol ChartDataSetProtocol
     ///
     /// *optional feature, can return `false` ifnot implemented*
     ///
-    /// - Parameters:
+    ///
     ///   - entry: the entry to remove
     /// - Returns: `true` if the entry was removed successfully, `false` ifthe entry does not exist or if this feature is not supported
     func removeEntry(_ entry: ChartDataEntry) -> Bool
@@ -126,7 +126,7 @@ public protocol ChartDataSetProtocol
     ///
     /// *optional feature, can return `false` ifnot implemented*
     ///
-    /// - Parameters:
+    ///
     ///   - index: the index of the entry to remove
     /// - Returns: `true` if the entry was removed successfully, `false` ifthe entry does not exist or if this feature is not supported
     func removeEntry(index: Int) -> Bool
@@ -135,7 +135,7 @@ public protocol ChartDataSetProtocol
     ///
     /// *optional feature, can return `false` ifnot implemented*
     ///
-    /// - Parameters:
+    ///
     ///   - x: the x-value to remove
     /// - Returns: `true` if the entry was removed successfully, `false` ifthe entry does not exist or if this feature is not supported
     func removeEntry(x: Double) -> Bool

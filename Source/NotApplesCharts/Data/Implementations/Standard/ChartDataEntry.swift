@@ -23,7 +23,7 @@ open class ChartDataEntry: ChartDataEntryBase, NSCopying
     
     /// An Entry represents one single entry in the chart.
     ///
-    /// - Parameters:
+    ///
     ///   - x: the x value
     ///   - y: the y value (the actual value of the entry)
     @objc public init(x: Double, y: Double)
@@ -34,7 +34,7 @@ open class ChartDataEntry: ChartDataEntryBase, NSCopying
     
     /// An Entry represents one single entry in the chart.
     ///
-    /// - Parameters:
+    ///
     ///   - x: the x value
     ///   - y: the y value (the actual value of the entry)
     ///   - data: Space for additional data this Entry represents.
@@ -47,7 +47,7 @@ open class ChartDataEntry: ChartDataEntryBase, NSCopying
     
     /// An Entry represents one single entry in the chart.
     ///
-    /// - Parameters:
+    ///
     ///   - x: the x value
     ///   - y: the y value (the actual value of the entry)
     ///   - icon: icon image
@@ -60,7 +60,7 @@ open class ChartDataEntry: ChartDataEntryBase, NSCopying
     
     /// An Entry represents one single entry in the chart.
     ///
-    /// - Parameters:
+    ///
     ///   - x: the x value
     ///   - y: the y value (the actual value of the entry)
     ///   - icon: icon image

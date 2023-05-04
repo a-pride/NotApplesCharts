@@ -134,7 +134,7 @@ open class Animator: NSObject
     /// Animates the drawing / rendering of the chart on both x- and y-axis with the specified animation time.
     /// If `animate(...)` is called, no further calling of `invalidate()` is necessary to refresh the chart.
     ///
-    /// - Parameters:
+    ///
     ///   - xAxisDuration: duration for animating the x axis
     ///   - yAxisDuration: duration for animating the y axis
     ///   - easingX: an easing function for the animation on the x axis
@@ -169,7 +169,7 @@ open class Animator: NSObject
     /// Animates the drawing / rendering of the chart on both x- and y-axis with the specified animation time.
     /// If `animate(...)` is called, no further calling of `invalidate()` is necessary to refresh the chart.
     ///
-    /// - Parameters:
+    ///
     ///   - xAxisDuration: duration for animating the x axis
     ///   - yAxisDuration: duration for animating the y axis
     ///   - easingOptionX: the easing function for the animation on the x axis
@@ -178,37 +178,17 @@ open class Animator: NSObject
     {
         animate(xAxisDuration: xAxisDuration, yAxisDuration: yAxisDuration, easingX: easingFunctionFromOption(easingOptionX), easingY: easingFunctionFromOption(easingOptionY))
     }
-    
-    /// Animates the drawing / rendering of the chart on both x- and y-axis with the specified animation time.
-    /// If `animate(...)` is called, no further calling of `invalidate()` is necessary to refresh the chart.
-    ///
-    /// - Parameters:
-    ///   - xAxisDuration: duration for animating the x axis
-    ///   - yAxisDuration: duration for animating the y axis
-    ///   - easing: an easing function for the animation
+
     @objc open func animate(xAxisDuration: TimeInterval, yAxisDuration: TimeInterval, easing: ChartEasingFunctionBlock?)
     {
         animate(xAxisDuration: xAxisDuration, yAxisDuration: yAxisDuration, easingX: easing, easingY: easing)
     }
-    
-    /// Animates the drawing / rendering of the chart on both x- and y-axis with the specified animation time.
-    /// If `animate(...)` is called, no further calling of `invalidate()` is necessary to refresh the chart.
-    ///
-    /// - Parameters:
-    ///   - xAxisDuration: duration for animating the x axis
-    ///   - yAxisDuration: duration for animating the y axis
-    ///   - easingOption: the easing function for the animation
+
     @objc open func animate(xAxisDuration: TimeInterval, yAxisDuration: TimeInterval, easingOption: ChartEasingOption = .easeInOutSine)
     {
         animate(xAxisDuration: xAxisDuration, yAxisDuration: yAxisDuration, easing: easingFunctionFromOption(easingOption))
     }
 
-    /// Animates the drawing / rendering of the chart the x-axis with the specified animation time.
-    /// If `animate(...)` is called, no further calling of `invalidate()` is necessary to refresh the chart.
-    ///
-    /// - Parameters:
-    ///   - xAxisDuration: duration for animating the x axis
-    ///   - easing: an easing function for the animation
     @objc open func animate(xAxisDuration: TimeInterval, easing: ChartEasingFunctionBlock?)
     {
         _startTimeX = CACurrentMediaTime()
@@ -233,7 +213,7 @@ open class Animator: NSObject
     /// Animates the drawing / rendering of the chart the x-axis with the specified animation time.
     /// If `animate(...)` is called, no further calling of `invalidate()` is necessary to refresh the chart.
     ///
-    /// - Parameters:
+    ///
     ///   - xAxisDuration: duration for animating the x axis
     ///   - easingOption: the easing function for the animation
     @objc open func animate(xAxisDuration: TimeInterval, easingOption: ChartEasingOption = .easeInOutSine)
@@ -244,7 +224,7 @@ open class Animator: NSObject
     /// Animates the drawing / rendering of the chart the y-axis with the specified animation time.
     /// If `animate(...)` is called, no further calling of `invalidate()` is necessary to refresh the chart.
     ///
-    /// - Parameters:
+    ///
     ///   - yAxisDuration: duration for animating the y axis
     ///   - easing: an easing function for the animation
     @objc open func animate(yAxisDuration: TimeInterval, easing: ChartEasingFunctionBlock?)
@@ -271,7 +251,7 @@ open class Animator: NSObject
     /// Animates the drawing / rendering of the chart the y-axis with the specified animation time.
     /// If `animate(...)` is called, no further calling of `invalidate()` is necessary to refresh the chart.
     ///
-    /// - Parameters:
+    ///
     ///   - yAxisDuration: duration for animating the y axis
     ///   - easingOption: the easing function for the animation
     @objc open func animate(yAxisDuration: TimeInterval, easingOption: ChartEasingOption = .easeInOutSine)

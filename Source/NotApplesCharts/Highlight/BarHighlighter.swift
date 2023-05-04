@@ -50,7 +50,7 @@ open class BarHighlighter: ChartHighlighter
     
     /// This method creates the Highlight object that also indicates which value of a stacked BarEntry has been selected.
     ///
-    /// - Parameters:
+    ///
     ///   - high: the Highlight to work with looking for stacked values
     ///   - set:
     ///   - xIndex:
@@ -91,7 +91,7 @@ open class BarHighlighter: ChartHighlighter
                          axis: high.axis)
     }
     
-    /// - Parameters:
+    ///
     ///   - entry:
     ///   - value:
     /// - Returns: The index of the closest value inside the values array / ranges (stacked barchart) to the value given as a parameter.

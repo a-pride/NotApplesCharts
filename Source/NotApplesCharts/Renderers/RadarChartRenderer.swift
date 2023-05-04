@@ -60,7 +60,7 @@ open class RadarChartRenderer: LineRadarRenderer
     
     /// Draws the RadarDataSet
     ///
-    /// - Parameters:
+    ///
     ///   - context:
     ///   - dataSet:
     ///   - mostEntries: the entry count of the dataset with the most entries

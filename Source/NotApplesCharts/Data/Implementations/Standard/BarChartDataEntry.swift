@@ -128,11 +128,6 @@ open class BarChartDataEntry: ChartDataEntry
         } ?? (0,0)
     }
     
-    /// Splits up the stack-values of the given bar-entry into Range objects.
-    ///
-    /// - Parameters:
-    ///   - entry:
-    /// - Returns:
     @objc open func calcRanges()
     {
         guard let values = yValues, !values.isEmpty else { return }
@@ -204,7 +199,7 @@ open class BarChartDataEntry: ChartDataEntry
     
     /// Calculates the sum across all values of the given stack.
     ///
-    /// - Parameters:
+    ///
     ///   - vals:
     /// - Returns:
     private static func calcSum(values: [Double]) -> Double

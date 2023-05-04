@@ -49,7 +49,7 @@ open class PieRadarHighlighter: ChartHighlighter
 
     }
     
-    /// - Parameters:
+    ///
     ///   - index:
     ///   - x:
     ///   - y:

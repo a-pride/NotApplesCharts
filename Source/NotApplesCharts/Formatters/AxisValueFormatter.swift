@@ -20,7 +20,7 @@ public protocol AxisValueFormatter: AnyObject
     ///
     /// For performance reasons, avoid excessive calculations and memory allocations inside this method.
     ///
-    /// - Parameters:
+    ///
     ///   - value:           the value that is currently being drawn
     ///   - axis:            the axis that the value belongs to
     /// - Returns: The customized label that is drawn on the x-axis.

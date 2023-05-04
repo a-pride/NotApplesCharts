@@ -15,7 +15,7 @@ import CoreGraphics
 @objc(ChartHighlighter)
 public protocol Highlighter: AnyObject
 {
-    /// - Parameters:
+    ///
     ///   - x:
     ///   - y:
     /// - Returns: A Highlight object corresponding to the given x- and y- touch positions in pixels.

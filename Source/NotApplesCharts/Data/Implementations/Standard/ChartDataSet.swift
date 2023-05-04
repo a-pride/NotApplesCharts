@@ -124,7 +124,7 @@ open class ChartDataSet: ChartBaseDataSet
     
     /// Updates the min and max x and y value of this DataSet based on the given Entry.
     ///
-    /// - Parameters:
+    ///
     ///   - e:
     internal func calcMinMax(entry e: ChartDataEntry)
     {
@@ -160,7 +160,7 @@ open class ChartDataSet: ChartBaseDataSet
         return self[i]
     }
     
-    /// - Parameters:
+    ///
     ///   - xValue: the x-value
     ///   - closestToY: If there are multiple y-values for the specified x-value,
     ///   - rounding: determine whether to round up/down/closest if there is no Entry matching the provided x-value
@@ -180,7 +180,7 @@ open class ChartDataSet: ChartBaseDataSet
         return nil
     }
     
-    /// - Parameters:
+    ///
     ///   - xValue: the x-value
     ///   - closestToY: If there are multiple y-values for the specified x-value,
     /// - Returns: The first Entry object found at the given x-value with binary search.
@@ -205,7 +205,7 @@ open class ChartDataSet: ChartBaseDataSet
         return partitioned[i...].prefix(while: match)
     }
     
-    /// - Parameters:
+    ///
     ///   - xValue: x-value of the entry to search for
     ///   - closestToY: If there are multiple y-values for the specified x-value,
     ///   - rounding: Rounding method if exact value was not found
@@ -281,7 +281,7 @@ open class ChartDataSet: ChartBaseDataSet
         return closest
     }
     
-    /// - Parameters:
+    ///
     ///   - e: the entry to search for
     /// - Returns: The array-index of the specified entry
     // TODO: Should be returning `nil` to follow Swift convention
@@ -295,7 +295,7 @@ open class ChartDataSet: ChartBaseDataSet
     /// Entries are added to the end of the list.
     /// This will also recalculate the current minimum and maximum values of the DataSet and the value-sum.
     ///
-    /// - Parameters:
+    ///
     ///   - e: the entry to add
     /// - Returns: True
     // TODO: This should return `Void` to follow Swift convention
@@ -310,7 +310,7 @@ open class ChartDataSet: ChartBaseDataSet
     /// Entries are added to their appropriate index respective to it's x-index.
     /// This will also recalculate the current minimum and maximum values of the DataSet and the value-sum.
     ///
-    /// - Parameters:
+    ///
     ///   - e: the entry to add
     /// - Returns: True
     // TODO: This should return `Void` to follow Swift convention
@@ -341,7 +341,7 @@ open class ChartDataSet: ChartBaseDataSet
     /// Removes an Entry from the DataSet dynamically.
     /// This will also recalculate the current minimum and maximum values of the DataSet and the value-sum.
     ///
-    /// - Parameters:
+    ///
     ///   - entry: the entry to remove
     /// - Returns: `true` if the entry was removed successfully, else if the entry does not exist
     open func remove(_ entry: ChartDataEntry) -> Bool

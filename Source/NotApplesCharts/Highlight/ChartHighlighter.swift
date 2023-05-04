@@ -29,7 +29,7 @@ open class ChartHighlighter : NSObject, Highlighter
         return getHighlight(xValue: xVal, x: x, y: y)
     }
     
-    /// - Parameters:
+    ///
     ///   - x:
     /// - Returns: The corresponding x-pos for a given touch-position in pixels.
     @objc open func getValsForTouch(x: CGFloat, y: CGFloat) -> CGPoint
@@ -40,7 +40,7 @@ open class ChartHighlighter : NSObject, Highlighter
         return chart.getTransformer(forAxis: .left).valueForTouchPoint(x: x, y: y)
     }
     
-    /// - Parameters:
+    ///
     ///   - xValue:
     ///   - x:
     ///   - y:
@@ -62,7 +62,7 @@ open class ChartHighlighter : NSObject, Highlighter
         return detail
     }
     
-    /// - Parameters:
+    ///
     ///   - xValue: the transformed x-value of the x-touch position
     ///   - x: touch position
     ///   - y: touch position

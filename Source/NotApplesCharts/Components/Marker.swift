@@ -20,7 +20,7 @@ public protocol Marker: AnyObject
     /// By returning y: -(height / 2) you will center the IMarker vertically.
     var offset: CGPoint { get }
     
-    /// - Parameters:
+    ///
     ///   - point: This is the point at which the marker wants to be drawn. You can adjust the offset conditionally based on this argument.
     /// - Returns: The offset for drawing at the specific `point`.
     ///            This allows conditional adjusting of the Marker position.
@@ -29,7 +29,7 @@ public protocol Marker: AnyObject
     
     /// This method enables a custom Marker to update it's content every time the Marker is redrawn according to the data entry it points to.
     ///
-    /// - Parameters:
+    ///
     ///   - entry: The Entry the IMarker belongs to. This can also be any subclass of Entry, like BarEntry or CandleEntry, simply cast it at runtime.
     ///   - highlight: The highlight object contains information about the highlighted value such as it's dataset-index, the selected range or stack-index (only stacked bar entries).
     func refreshContent(entry: ChartDataEntry, highlight: Highlight)

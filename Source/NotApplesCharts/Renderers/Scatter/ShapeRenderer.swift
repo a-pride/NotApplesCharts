@@ -17,7 +17,7 @@ public protocol ShapeRenderer: AnyObject
 {
     /// Renders the provided ScatterDataSet with a shape.
     ///
-    /// - Parameters:
+    ///
     ///   - context:         CGContext for drawing on
     ///   - dataSet:         The DataSet to be drawn
     ///   - viewPortHandler: Contains information about the current state of the view

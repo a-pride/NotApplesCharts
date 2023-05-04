@@ -251,23 +251,12 @@ open class ChartData: NSObject, ExpressibleByArrayLiteral
         }
     }
 
-    /// Get the Entry for a corresponding highlight object
-    ///
-    /// - Parameters:
-    ///   - highlight:
-    /// - Returns: The entry that is highlighted
     @objc open func entry(for highlight: Highlight) -> ChartDataEntry?
     {
         guard highlight.dataSetIndex < dataSets.endIndex else { return nil }
         return self[highlight.dataSetIndex].entryForXValue(highlight.x, closestToY: highlight.y)
     }
-    
-    /// **IMPORTANT: This method does calculations at runtime. Use with care in performance critical situations.**
-    ///
-    /// - Parameters:
-    ///   - label:
-    ///   - ignorecase:
-    /// - Returns: The DataSet Object with the given label. Sensitive or not.
+
     @objc open func dataSet(forLabel label: String, ignorecase: Bool) -> Element?
     {
         guard let index = index(forLabel: label, ignoreCase: ignorecase) else { return nil }
@@ -281,10 +270,6 @@ open class ChartData: NSObject, ExpressibleByArrayLiteral
         return self[index]
     }
 
-    /// Removes the given DataSet from this data object.
-    /// Also recalculates all minimum and maximum values.
-    ///
-    /// - Returns: `true` if a DataSet was removed, `false` ifno DataSet could be removed.
     @objc @discardableResult open func removeDataSet(_ dataSet: Element) -> Element?
     {
         guard let index = firstIndex(where: { $0 === dataSet }) else { return nil }
@@ -547,7 +532,7 @@ extension ChartData
     /// Retrieve the index of a ChartDataSet with a specific label from the ChartData. Search can be case sensitive or not.
     /// **IMPORTANT: This method does calculations at runtime, do not over-use in performance critical situations.**
     ///
-    /// - Parameters:
+    ///
     ///   - label: The label to search for
     ///   - ignoreCase: if true, the search is not case-sensitive
     /// - Returns: The index of the DataSet Object with the given label. `nil` if not found

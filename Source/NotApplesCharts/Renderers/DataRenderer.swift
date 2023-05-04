@@ -34,7 +34,7 @@ public protocol DataRenderer: Renderer
 
     /// Draws all highlight indicators for the values that are currently highlighted.
     ///
-    /// - Parameters:
+    ///
     ///   - indices: the highlighted values
     func drawHighlighted(context: CGContext, indices: [Highlight])
 
@@ -46,7 +46,7 @@ public protocol DataRenderer: Renderer
 
     /// Creates an ```NSUIAccessibilityElement``` that acts as the first and primary header describing a chart view.
     ///
-    /// - Parameters:
+    ///
     ///   - chart: The chartView object being described
     ///   - data: A non optional data source about the chart
     ///   - defaultDescription: A simple string describing the type/design of Chart.

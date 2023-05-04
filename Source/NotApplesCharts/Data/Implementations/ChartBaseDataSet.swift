@@ -218,7 +218,7 @@ open class ChartBaseDataSet: NSObject, ChartDataSetProtocol, NSCopying
     
     /// Adds a new color to the colors array of the DataSet.
     ///
-    /// - Parameters:
+    ///
     ///   - color: the color to add
     open func addColor(_ color: NSUIColor)
     {
@@ -228,7 +228,7 @@ open class ChartBaseDataSet: NSObject, ChartDataSetProtocol, NSCopying
     /// Sets the one and **only** color that should be used for this DataSet.
     /// Internally, this recreates the colors array and adds the specified color.
     ///
-    /// - Parameters:
+    ///
     ///   - color: the color to set
     open func setColor(_ color: NSUIColor)
     {
@@ -238,7 +238,7 @@ open class ChartBaseDataSet: NSObject, ChartDataSetProtocol, NSCopying
     
     /// Sets colors to a single color a specific alpha value.
     ///
-    /// - Parameters:
+    ///
     ///   - color: the color to set
     ///   - alpha: alpha to apply to the set `color`
     @objc open func setColor(_ color: NSUIColor, alpha: CGFloat)
@@ -248,7 +248,7 @@ open class ChartBaseDataSet: NSObject, ChartDataSetProtocol, NSCopying
     
     /// Sets colors with a specific alpha value.
     ///
-    /// - Parameters:
+    ///
     ///   - colors: the colors to set
     ///   - alpha: alpha to apply to the set `colors`
     @objc open func setColors(_ colors: [NSUIColor], alpha: CGFloat)
@@ -258,7 +258,7 @@ open class ChartBaseDataSet: NSObject, ChartDataSetProtocol, NSCopying
     
     /// Sets colors with a specific alpha value.
     ///
-    /// - Parameters:
+    ///
     ///   - colors: the colors to set
     ///   - alpha: alpha to apply to the set `colors`
     open func setColors(_ colors: NSUIColor...)

@@ -20,7 +20,7 @@ open class LegendEntry: NSObject
         super.init()
     }
     
-    /// - Parameters:
+    ///
     ///   - label:                  The legend entry text.
     ///                                     A `nil` label will start a group.
     @objc public init(label: String?)

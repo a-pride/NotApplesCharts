@@ -111,7 +111,7 @@ open class BarChartView: BarLineChartViewBase, BarChartDataProvider
     /// Previously set x-values of entries will be overwritten. Leaves space between bars and groups as specified by the parameters.
     /// Calls `notifyDataSetChanged()` afterwards.
     ///
-    /// - Parameters:
+    ///
     ///   - fromX: the starting point on the x-axis where the grouping should begin
     ///   - groupSpace: the space between groups of bars in values (not pixels) e.g. 0.8f for bar width 1f
     ///   - barSpace: the space between individual bars in values (not pixels) e.g. 0.1f for bar width 1f
@@ -130,7 +130,7 @@ open class BarChartView: BarLineChartViewBase, BarChartDataProvider
     
     /// Highlights the value at the given x-value in the given DataSet. Provide -1 as the dataSetIndex to undo all highlighting.
     ///
-    /// - Parameters:
+    ///
     ///   - x:
     ///   - dataSetIndex:
     ///   - stackIndex: the index inside the stack - only relevant for stacked entries
